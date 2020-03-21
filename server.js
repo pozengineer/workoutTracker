@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(express.static("public"));
 app.use(bodyParser.json())
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutDB", { useNewUrlParser: true });
 
 require("./routes/api-routes")(app);
 require("./routes/html-routes")(app);
