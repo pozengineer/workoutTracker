@@ -8,7 +8,7 @@ async function initWorkout() {
 
     var totalDur = 0;
     lastWorkout.exercises.forEach(element => {
-      totdur += element.duration;
+      totalDur += element.duration;
     })
     // console.log(lastWorkout.exercises);
     // var index = lastWorkout.exercises.length - 1;
